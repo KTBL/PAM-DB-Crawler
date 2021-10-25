@@ -4,6 +4,20 @@
 Model-Mapping as provided at: https://psm.tech4germany.org/#/default/get_schadorg_gruppe_
 -> Model
 -> Removing the second "type-like column"
+
+Map Description:
+-----------------
+Table-Name : String with Model definition
+For each Table-Name, there must be exactly one endpoint in the endpoint
+map provided below.
+
+Model-Definition:
+------------------
+Important: One Definition per Line, no empty line allowed!
+<Column-Name> <whitespaces> <Column-Type>
+
+Type-Mappings (which types are known/allowed and map to which sqlite-type) are provided
+at generator.TYPE_MAP
 """
 
 definition = {
@@ -83,6 +97,9 @@ definition = {
 }
 
 """
+Definition of the Endpoints. Name of the Endpoint must be found in the
+definition map above.
+
 Format: "<endpoint>/?offset="
 """
 endpoints = {

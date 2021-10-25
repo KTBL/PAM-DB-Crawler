@@ -23,7 +23,7 @@ Have a look at `definitions.py`
 If you want to extend the models somehow:  
 Have a look at `generator.py`
 
-Footnote: 
+## Footnotes: 
 Meta-Programming 101 - This project is to 80% a python code generator. The generated code is a stupid, write-only DB model which is able to pull data from an endpoint provided.
 
 Python-specific information: Well.. actually there are something called "Metaclasses" in Python which could be used instead of the direct code-generation I have been using here. Would be nice to translate this code to a Metaclass based generator in the near future.

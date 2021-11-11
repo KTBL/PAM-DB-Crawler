@@ -106,13 +106,13 @@ definition map above.
 Format: "<endpoint>/?offset="
 """
 endpoints = {
-    "STAND": "https://psm.tech4germany.org:8443/ords/psm/api-v1/stand/?offset=",
-    "AWG": "https://psm.tech4germany.org:8443/ords/psm/api-v1/awg/?offset=",
-    "AUFLAGEN": "https://psm.tech4germany.org:8443/ords/psm/api-v1/auflagen/?offset=",
-    "AUFLAGE_REDU": "https://psm.tech4germany.org:8443/ords/psm/api-v1/auflage_redu/?offset=",
-    "KODE": "https://psm.tech4germany.org:8443/ords/psm/api-v1/kode/?offset=",
-    "AWG_AUFWAND": "https://psm.tech4germany.org:8443/ords/psm/api-v1/awg_aufwand/?offset=",
-    "KULTUR_GRUPPE": "https://psm.tech4germany.org:8443/ords/psm/api-v1/kultur_gruppe/?offset=",
-    "AWG_ZEITPUNKT": "https://psm.tech4germany.org:8443/ords/psm/api-v1/awg_zeitpunkt/?offset=",
-    "SCHADORG_GRUPPE": "https://psm.tech4germany.org:8443/ords/psm/api-v1/schadorg_gruppe/?offset="
+    "STAND": "https://psm-api.bvl.bund.de/ords/psm/api-v1/stand/?offset=",
+    "AWG": "https://psm-api.bvl.bund.de/ords/psm/api-v1/awg/?offset=",
+    "AUFLAGEN": "https://psm-api.bvl.bund.de/ords/psm/api-v1/auflagen/?offset=",
+    "AUFLAGE_REDU": "https://psm-api.bvl.bund.de/ords/psm/api-v1/auflage_redu/?offset=",
+    "KODE": "https://psm-api.bvl.bund.de/ords/psm/api-v1/kode/?offset=",
+    "AWG_AUFWAND": "https://psm-api.bvl.bund.de/ords/psm/api-v1/awg_aufwand/?offset=",
+    "KULTUR_GRUPPE": "https://psm-api.bvl.bund.de/ords/psm/api-v1/kultur_gruppe/?offset=",
+    "AWG_ZEITPUNKT": "https://psm-api.bvl.bund.de/ords/psm/api-v1/awg_zeitpunkt/?offset=",
+    "SCHADORG_GRUPPE": "https://psm-api.bvl.bund.de/ords/psm/api-v1/schadorg_gruppe/?offset="
 }

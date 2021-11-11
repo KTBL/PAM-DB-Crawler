@@ -69,6 +69,8 @@ for name, api in instances.items():
         api_state['offset'] = next_offset
         print(f"hasmore={has_more}, next_offset={next_offset}")
         time.sleep(10)
+# uncomment the following line to do a test run with only a single pull per endpoint
+#        api_state['has_more'] = False
     print(f"{name} doesn't have any more items")
 print()
 

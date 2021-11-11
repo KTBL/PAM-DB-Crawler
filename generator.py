@@ -4,7 +4,8 @@ import os
 TYPE_MAP = {
     'VARCHAR2': 'TEXT',
     'NUMBER': 'NUMERIC',
-    'CHAR': 'TEXT'
+    'CHAR': 'TEXT',
+    'DATE': 'TIMESTAMP'
 }
 
 

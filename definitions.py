@@ -21,6 +21,9 @@ at generator.TYPE_MAP
 """
 
 definition = {
+    "STAND": """DATUM   DATE
+    M_ROW$$     VARCHAR2""",
+
     "AWG": """ANTRAGNR	VARCHAR2
     ANWENDUNGEN_ANZ_JE_BEFALL	NUMBER
     ANWENDUNGEN_MAX_JE_KULTUR	NUMBER
@@ -93,7 +96,7 @@ definition = {
     
     "SCHADORG_GRUPPE": """M_ROW$$	VARCHAR2
     SCHADORG	VARCHAR2
-    SCHADORG_GRUPPE	VARCHAR2""",
+    SCHADORG_GRUPPE	VARCHAR2"""
 }
 
 """
@@ -103,6 +106,7 @@ definition map above.
 Format: "<endpoint>/?offset="
 """
 endpoints = {
+    "STAND": "https://psm.tech4germany.org:8443/ords/psm/api-v1/stand/?offset=",
     "AWG": "https://psm.tech4germany.org:8443/ords/psm/api-v1/awg/?offset=",
     "AUFLAGEN": "https://psm.tech4germany.org:8443/ords/psm/api-v1/auflagen/?offset=",
     "AUFLAGE_REDU": "https://psm.tech4germany.org:8443/ords/psm/api-v1/auflage_redu/?offset=",

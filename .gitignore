@@ -1,8 +1,14 @@
 # CUSTOM
 
+# Models directory, except the __init__.py file
 models/*
 !models/__init__.py
+# Database
 pam-db
+# State file
+.psm_db_crawler.state.json
+# Python compiled binaries cache
+__pycache__
 
 
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider

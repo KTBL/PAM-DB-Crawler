@@ -31,7 +31,7 @@ def create_table_stmt(name, fields):
     # CREATE TABLE foo(baz, bar, boo)
     # We simply take the information of the fields and for each field
     # we create a column.
-    stmt = f'CREATE TABLE {name.lower()}('
+    stmt = f'CREATE TABLE IF NOT EXISTS {name.lower()}('
     for i, field in enumerate(fields.items()):
         f_name, f_type = field
         stmt += f'{f_name.lower()} {f_type}'

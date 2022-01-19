@@ -2,7 +2,7 @@
 
 ## Intro
 
-This repository contains a simple, stupid meta-programming based crawler-genrator for the _API Pflanzenschutz DB_ provided at: https://psm.tech4germany.org/#/default/get_auflagen_
+This repository contains a simple, stupid meta-programming based crawler-genrator for the _API Pflanzenschutz DB_ provided at: https://psm-api.bvl.bund.de/
 
 > Das Bundesamt für Verbraucherschutz und Lebensmittelsicherheit stellt monatlich die in Deutschland geltenden Pflanzenschutzmittelzulassungen in einer Datenbank (PSM-DB) bereit. Dies ist die Dokumentation dieser PSM-DB über das Tool Swagger im OpenAPI-Standard. Die PSM-DB stellt dieselben Daten wie der über das BVL zu beziehende monatliche Access-Dumb [sic] in selber Aktualität bereit.
 

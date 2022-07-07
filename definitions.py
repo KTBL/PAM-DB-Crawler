@@ -21,7 +21,7 @@ at generator.TYPE_MAP
 """
 
 definition = {
-    "STAND": """DATUM   DATE
+"STAND": """DATUM   DATE
     M_ROW$$     VARCHAR2""",
 
     "AWG": """ANTRAGNR	VARCHAR2
@@ -96,7 +96,56 @@ definition = {
     
     "SCHADORG_GRUPPE": """M_ROW$$	VARCHAR2
     SCHADORG	VARCHAR2
-    SCHADORG_GRUPPE	VARCHAR2"""
+    SCHADORG_GRUPPE	VARCHAR2""",
+
+    "WIRKSTOFF":"""WIRKNR VARCHAR2
+    WIRKSTOFFNAME VARCHAR2
+    WIRKSTOFFNAME_EN VARCHAR2
+    KATEGORIE VARCHAR2
+    GENEHMIGT VARCHAR2
+    M_ROW$$	VARCHAR2""",
+    
+    "WIRKSTOFF_GEHALT":"""KENNR VARCHAR2
+    WIRKNR VARCHAR2
+    WIRKVAR VARCHAR2
+    GEHALT_REIN NUMBER
+    GEHALT_REIN_GRUNDSTRUKTUR NUMBER
+    GEHALT_EINHEIT VARCHAR2
+    GEHALT_BIO NUMBER
+    GEHALT_BIO_EINHEIT VARCHAR2
+    M_ROW$$	VARCHAR2""",
+    
+    "MITTEL_WIRKBEREICH":"""KENNR VARCHAR2
+    WIRKUNGSBEREICH VARCHAR2
+    M_ROW$$	VARCHAR2""",
+
+    "MITTEL":"""KENNR VARCHAR2
+    ZUL_ERSTMALIG_AM DATE
+    MITTELNAME VARCHAR2
+    FORMULIERUNG_ART VARCHAR2
+    ZUL_ENDE DATE""",
+
+    "MITTEL_ABGELAUFEN":"""AUFBRAUCHFRIST DATE
+    FORMULIERUNG_ART VARCHAR2
+    KENNR VARCHAR2
+    MITTELNAME VARCHAR2
+    STATUS VARCHAR2
+    ZUL_ENDE DATE
+    ZUL_ERSTMALIG_AM DATE
+    M_ROW$$ VARCHAR2""",
+
+    "AWG_KULTUR":"""AUSGENOMMEN VARCHAR2
+    AWG_ID VARCHAR2
+    KULTUR VARCHAR2
+    SORTIER_NR VARCHAR2
+    M_ROW$$ VARCHAR2""",
+
+    "AWG_SCHADORG":"""AUSGENOMMEN VARCHAR2
+    AWG_ID VARCHAR2
+    SCHADORG VARCHAR2
+    SORTIER_NR VARCHAR2
+    M_ROW$$ VARCHAR2"""
+
 }
 
 """
@@ -114,5 +163,14 @@ endpoints = {
     "AWG_AUFWAND": "https://psm-api.bvl.bund.de/ords/psm/api-v1/awg_aufwand/?offset=",
     "KULTUR_GRUPPE": "https://psm-api.bvl.bund.de/ords/psm/api-v1/kultur_gruppe/?offset=",
     "AWG_ZEITPUNKT": "https://psm-api.bvl.bund.de/ords/psm/api-v1/awg_zeitpunkt/?offset=",
-    "SCHADORG_GRUPPE": "https://psm-api.bvl.bund.de/ords/psm/api-v1/schadorg_gruppe/?offset="
+    "SCHADORG_GRUPPE": "https://psm-api.bvl.bund.de/ords/psm/api-v1/schadorg_gruppe/?offset=",
+    "WIRKSTOFF": "https://psm-api.bvl.bund.de/ords/psm/api-v1/wirkstoff/?offset=",
+    "WIRKSTOFF_GEHALT": "https://psm-api.bvl.bund.de/ords/psm/api-v1/wirkstoff_gehalt/?offset=",
+    "MITTEL_WIRKBEREICH": "https://psm-api.bvl.bund.de/ords/psm/api-v1/mittel_wirkbereich/?offset=",
+    "MITTEL": "https://psm-api.bvl.bund.de/ords/psm/api-v1/mittel/?offset=",
+    "MITTEL_ABGELAUFEN": "https://psm-api.bvl.bund.de/ords/psm/api-v1/mittel_abgelaufen/?offset=",
+    "AWG_KULTUR": "https://psm-api.bvl.bund.de/ords/psm/api-v1/awg_kultur/?offset=",
+    "AWG_SCHADORG": "https://psm-api.bvl.bund.de/ords/psm/api-v1/awg_schadorg/?offset="
+
+
 }
